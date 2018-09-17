@@ -70,7 +70,28 @@ heroku apps:info
 ```
 
 
-### (12) 變更目前與myApp相連的heroku app
+### (12) **變更目前與myApp相連的heroku app
 ```
 heroku git:remote -a [另一個heroku app名稱]
 ```
+
+
+### (13) 列出遠端儲存庫資訊
+```
+git remote -v
+```
+
+
+### (14) 將本地端資料上傳至遠端
+```
+git add .
+git commit -am "myApp"
+git push heroku master
+```
+
+
+### (15) 開啟heroku專案
+```
+heroku open
+```
+
