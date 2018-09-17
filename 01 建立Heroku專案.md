@@ -50,3 +50,27 @@ heroku login
 
 
 ### (8) 如果已登出, 請先重新登入
+
+
+### (9) 建立一個heroku專案(若名稱重覆, 再改一個)
+```
+heroku create 專案名稱(如:test12345)
+```
+
+
+### (10) 顯示自己在heroku帳號中所有的app
+```
+heroku apps
+```
+
+
+### (11) 顯示目前與myApp相連的heroku app
+```
+heroku apps:info
+```
+
+
+### (12) 變更目前與myApp相連的heroku app
+```
+heroku git:remote -a [另一個heroku app名稱]
+```
