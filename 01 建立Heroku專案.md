@@ -58,31 +58,31 @@ heroku create 專案名稱(如:test12345)
 ```
 
 
-### (10) 顯示自己在heroku帳號中所有的app
+### (10) 顯示自己在heroku帳號中所有的專案
 ```
 heroku apps
 ```
 
 
-### (11) 顯示目前與myApp相連的heroku app
+### (11) 顯示目前操作的heroku專案
 ```
 heroku apps:info
 ```
 
 
-### (12) **變更目前與myApp相連的heroku app
+### (12) **變更目前操作的heroku專案
 ```
-heroku git:remote -a [另一個heroku app名稱]
+heroku git:remote -a [另一個heroku專案名稱]
 ```
 
 
-### (13) 列出遠端儲存庫資訊
+### (13) 列出遠端git儲存庫資訊
 ```
 git remote -v
 ```
 
 
-### (14) 將本地端資料上傳至遠端
+### (14) 將本地端資料上傳至遠端heroku專案的git儲存庫
 ```
 git add .
 git commit -am "myApp"
@@ -90,7 +90,7 @@ git push heroku master
 ```
 
 
-### (15) 開啟heroku專案
+### (15) 開啟目前操作中的heroku專案
 ```
 heroku open
 ```
