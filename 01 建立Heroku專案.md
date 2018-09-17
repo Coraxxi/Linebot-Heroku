@@ -95,3 +95,11 @@ git push heroku master
 heroku open
 ```
 
+
+### (16) 將git儲存庫內容下載在另一個資料(假設是myApp2, 需先登入heroku)
+```
+cd\
+md app2
+cd app2
+heroku git:clone -a test12345(自己原有heroku專案的名稱)
+```
