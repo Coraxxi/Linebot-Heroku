@@ -20,12 +20,13 @@
 ![GitHub Logo](/imgs/1-3.jpg)
 
 
-### (4) 在[D槽]建立一個<myApp>資料夾
+### (4) 在[D槽]建立一個名稱為myApp的Express框架
 ```
 d:
 cd\
-md myApp
-cd myApp  
+express myApp -ejs
+cd myApp
+npm install
 ```
 
 
@@ -42,7 +43,10 @@ heroku whoami
 ```
 
 
-### (7) 如果要登出heroku
+### (7) **如果要登出heroku
 ```
 heroku login
 ```
+
+
+### (8) 如果已登出, 請先重新登入
