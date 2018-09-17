@@ -95,6 +95,9 @@ git push heroku master
 heroku open
 ```
 
+#### 應該看到以下畫面
+![GitHub Logo](/imgs/1-4.jpg)
+
 
 ### (16) 將git儲存庫內容下載在另一個資料(假設是myApp2, 需先登入heroku)
 ```
