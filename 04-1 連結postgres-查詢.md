@@ -4,7 +4,7 @@
 ### 呼叫方式:
 
 ```
-https://自己的app名稱.herokuapp.com/student/120001   
+https://自己的Heroku專案名稱.herokuapp.com/student/120001   
 ```
 
 
