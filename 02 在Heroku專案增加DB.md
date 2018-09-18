@@ -21,3 +21,9 @@
 #### 查看專案, 新增專案.
 ![GitHub Logo](/imgs/2-2.jpg)
 
+
+
+### (4) 建立一個Heroku Postgres資料庫.
+
+#### 選擇Data, 在Heroku Postgres選單中按下[Create one].
+![GitHub Logo](/imgs/2-3.jpg)
