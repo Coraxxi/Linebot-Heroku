@@ -110,7 +110,7 @@ var Client = require('./lib/db.js');
 //---------------------
 // 查詢
 //---------------------
-router.get('/:no', function(req, res, next) {
+router.get('/query/:no', function(req, res, next) {
     var no = req.params.no;
 	
     client = Client();
