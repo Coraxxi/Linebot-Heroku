@@ -2,7 +2,7 @@
 
 
 
-### (1) 開始前, 應該在Heroku平台有一個帳戶, 而且已經登入.
+### (1) 開始前, 應該在Heroku平台有一個帳戶, 而且已經登入
 
 #### 確定已在登入狀態
 ![GitHub Logo](/imgs/2-0.jpg)
@@ -16,14 +16,31 @@
 
 
 
-### (3) 查看自己已有的專案(示意圖有2個專案), 如要新增, 選擇New項下的[Create new app].
+### (3) 查看自己已有的專案(示意圖有2個專案), 如要新增, 選擇New項下的[Create new app]
 
 #### 查看專案, 新增專案.
 ![GitHub Logo](/imgs/2-2.jpg)
 
 
 
-### (4) 建立一個Heroku Postgres資料庫.
+### (4) 建立一個Heroku Postgres資料庫
 
 #### 選擇Data, 在Heroku Postgres選單中按下[Create one].
 ![GitHub Logo](/imgs/2-3.jpg)
+
+
+
+### (5) 安裝Heroku Postgres
+
+#### 按下[Install Heroku Postgres].
+![GitHub Logo](/imgs/2-4.jpg)
+
+
+
+### (6) 輸入專案名稱, DB將安裝其中
+
+#### 輸入自己的專案名稱.
+![GitHub Logo](/imgs/2-5.jpg)
+
+
+
