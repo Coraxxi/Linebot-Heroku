@@ -112,7 +112,6 @@ var Client = require('./lib/db.js');
 //---------------------
 router.get('/:no', function(req, res, next) {
     var no = req.params.no;
-    console.log(no)
 	
     client = Client();
     client.connect();
@@ -123,7 +122,6 @@ router.get('/:no', function(req, res, next) {
         if (results.rows.length==0){
             res.render('index', { title: '找不到資料' });
         }else{	      
-            console.log(results.rows[0].stuname);
             var stuname=results.rows[0].stuname;
             res.render('index', { title: stuname });
         }
