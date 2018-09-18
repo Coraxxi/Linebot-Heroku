@@ -21,10 +21,10 @@
 const { Client } = require('pg');
 
 module.exports = function(){
-	return new Client({
-		connectionString: 'postgres://自己在heroku中的database URI',
-		ssl: true,
-	})
+    return new Client({
+        connectionString: 'postgres://自己在heroku中的database URI',
+        ssl: true,
+    })
 };
 ```
 
