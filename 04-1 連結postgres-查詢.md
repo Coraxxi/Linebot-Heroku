@@ -15,7 +15,7 @@
 ```
 
 
-### (1) db.js
+### (1) app.js
 
 ```javascript
 var express = require('express');
