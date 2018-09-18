@@ -1,19 +1,3 @@
-/*
- Navicat PostgreSQL Data Transfer
-
- Source Server         : herokudb
- Source Server Type    : PostgreSQL
- Source Server Version : 100004
- Source Host           : ec2-54-235-249-33.compute-1.amazonaws.com:5432
- Source Catalog        : d5v02vlj7f9l00
- Source Schema         : public
-
- Target Server Type    : PostgreSQL
- Target Server Version : 100004
- File Encoding         : 65001
-
- Date: 09/09/2018 12:48:03
-*/
 
 
 -- ----------------------------
@@ -9602,3 +9586,7 @@ ALTER TABLE "public"."score" ADD CONSTRAINT "fk02" FOREIGN KEY ("couNo") REFEREN
 -- ----------------------------
 ALTER TABLE "public"."student" ADD CONSTRAINT "fk01" FOREIGN KEY ("schNo") REFERENCES "public"."school" ("schNo") ON DELETE RESTRICT ON UPDATE RESTRICT;
 ALTER TABLE "public"."student" ADD CONSTRAINT "fk02" FOREIGN KEY ("stuType") REFERENCES "public"."stutype" ("typNo") ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+
+
