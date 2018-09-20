@@ -143,6 +143,7 @@ bot.on('message', function(event) {
             client.connect();
 			
             //查詢資料
+            //(資料庫欄位名稱不使用駝峰命名, 否則可能出錯)
             client.query("select * from student where stuno = $1", [no], (err, results) => {    
                 console.log(results);
 				
