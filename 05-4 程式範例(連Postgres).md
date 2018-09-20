@@ -81,21 +81,21 @@ heroku logs --tail
 
 ```json
 {
-  "name": "myApp",
-  "version": "1.0.0",
-  "description": "my Linebot application",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ."
-  },
-  "author": "tomlin",
-  "license": "ISC",
-  "dependencies": {
-    "@line/bot-sdk": "^6.2.1",
-    "express": "^4.16.3",
-    "linebot": "^1.4.1",
-    "pg": "^7.4.3"
-  }
+    "name": "myApp",
+    "version": "1.0.0",
+    "description": "my Linebot application",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "author": "tomlin",
+    "license": "ISC",
+    "dependencies": {
+        "@line/bot-sdk": "^6.2.1",
+        "express": "^4.16.3",
+        "linebot": "^1.4.1",
+        "pg": "^7.4.3"
+    }
 }
 ```
 
@@ -129,35 +129,35 @@ var bot = linebot({
 bot.on('message', function(event) {    
     event.source.profile().then(
         function (profile) {	
-		        //取得使用者資料及傳回文字
-		        var userName = profile.displayName;
-		        var userId = profile.userId;
+            //取得使用者資料及傳回文字
+            var userName = profile.displayName;
+            var userId = profile.userId;
             var no = event.message.text;		
 
- 		        //建立資料庫連線           
-		        var client = new Client({
-		            connectionString: 'postgres://(填入自己的資料)',
-		            ssl: true,
-		        })
+            //建立資料庫連線           
+            var client = new Client({
+                connectionString: 'postgres://(填入自己的資料)',
+                ssl: true,
+            })
 			
-		        client.connect();
+            client.connect();
 			
-		        //查詢資料
-		        client.query("select * from student where stuno = $1", [no], (err, results) => {    
-		            console.log(results);
+            //查詢資料
+            client.query("select * from student where stuno = $1", [no], (err, results) => {    
+                console.log(results);
 				
-		            //回覆查詢結果
-		            if (err || results.rows.length==0){
-		                event.reply('找不到資料');
-		            }else{						
-		                var stuname=results.rows[0].stuName;
-		                event.reply(stuname);
-		            }
+                //回覆查詢結果
+                if (err || results.rows.length==0){
+                    event.reply('找不到資料');
+                }else{						
+                    var stuname=results.rows[0].stuName;
+                    event.reply(stuname);
+                }
 
-		            //關閉連線
-		            client.end();
-		        });  
-		    }
+                //關閉連線
+                client.end();
+            });  
+        }
     );
 });
 
