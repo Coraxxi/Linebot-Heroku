@@ -28,6 +28,7 @@ heroku login
 
 5. 登入git
 ------------------------------------------------ 
+若未安裝git cli, 先下載安裝:https://git-scm.com/downloads
 
 
 6. 建立一個heroku專案
