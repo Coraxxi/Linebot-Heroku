@@ -51,8 +51,9 @@ heroku git:remote -a myTestApp
 9. 安裝模組
 ------------------------------------------------ 
 npm install
-npm express --save
-npm linebot --save
+npm install express --save
+npm install linebot --save
+npm install pg --save
 
 
 10. 上傳本地端git至heroku專案的git空間
