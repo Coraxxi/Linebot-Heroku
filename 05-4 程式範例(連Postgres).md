@@ -94,8 +94,7 @@ heroku logs --tail
     },
     "author": "tomlin",
     "license": "ISC",
-    "dependencies": {
-        "@line/bot-sdk": "^6.2.1",
+    "dependencies": {        
         "express": "^4.16.3",
         "linebot": "^1.4.1",
         "pg": "^7.4.3"
