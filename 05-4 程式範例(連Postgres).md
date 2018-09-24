@@ -155,7 +155,7 @@ bot.on('message', function(event) {
                 if (err || results.rows.length==0){
                     event.reply('找不到資料');
                 }else{						
-                    var stuname=results.rows[0].stuName;
+                    var stuname=results.rows[0].stuname;
                     event.reply(stuname);
                 }
 
