@@ -140,7 +140,7 @@ bot.on('message', function(event) {
 
             //建立資料庫連線           
             var client = new Client({
-                connectionString: 'postgres://(填入自己的資料)',
+                connectionString: 'postgres://(填入自己的資料庫URI)',
                 ssl: true,
             })
 			
