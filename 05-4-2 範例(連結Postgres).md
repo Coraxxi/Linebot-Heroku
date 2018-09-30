@@ -126,6 +126,11 @@ var bot = linebot({
 });
 
 
+//-----------------------------------------------------
+// 自己的資料庫連結位址
+//-----------------------------------------------------
+var pgConn = 'postgres://(填入自己的資料庫URI)';
+
 
 //--------------------------------
 // 機器人接受訊息的處理
@@ -140,7 +145,7 @@ bot.on('message', function(event) {
 
             //建立資料庫連線           
             var client = new Client({
-                connectionString: 'postgres://(填入自己的資料庫URI)',
+                connectionString: pgConn,
                 ssl: true,
             })
 			
