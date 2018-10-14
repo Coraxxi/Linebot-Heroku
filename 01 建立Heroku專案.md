@@ -90,7 +90,7 @@ git push heroku master
 ```
 
 
-### (15) 開啟目前操作中的heroku專案
+### (15) 開啟目前操作的heroku專案
 ```
 heroku open
 ```
@@ -99,7 +99,13 @@ heroku open
 ![GitHub Logo](/imgs/1-4.jpg)
 
 
-### (16) 將git儲存庫內容下載在另一個資料(假設是myApp2, 需先登入heroku)
+### (16) 查看目前操作heroku的console畫面
+```
+heroku logs --tail
+```
+
+
+### (17) 將git儲存庫內容下載在另一個資料(假設是myApp2, 需先登入heroku)
 ```
 cd\
 md app2
