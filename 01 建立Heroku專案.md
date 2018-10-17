@@ -20,12 +20,12 @@
 ![GitHub Logo](/imgs/1-3.jpg)
 
 
-### (4) 在[D槽]建立一個名稱為myApp的Express框架
+### (4) 在[D槽]建立一個名稱為app的Express框架
 ```
 d:
 cd\
-express myApp -ejs
-cd myApp
+express app -ejs
+cd app
 npm install
 ```
 
@@ -54,7 +54,7 @@ heroku logout
 
 ### (9) **建立一個heroku應用程式(也可以在heroku developers平台中建立)
 ```
-heroku create 專案名稱(如:test12345)
+heroku create [heroku應用程式名稱(如:test12345)]
 ```
 
 
