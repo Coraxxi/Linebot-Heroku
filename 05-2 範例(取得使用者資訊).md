@@ -25,7 +25,7 @@ git init
 
 
 3. 產生package.json
-   (假設已安裝node.js)
+   (假設已安裝node.js, 網址: https://nodejs.org/en/download)
 ------------------------------------------------ 
 npm init
 
@@ -54,7 +54,6 @@ heroku git:remote -a [heroku應用程式名稱]
                      +-----------------+ (自己的heroku應用程式名稱)             
 
 
-
 8. 修改package.json(程式如下)
 ------------------------------------------------ 
 
@@ -62,10 +61,6 @@ heroku git:remote -a [heroku應用程式名稱]
 9. 安裝模組
 ------------------------------------------------ 
 npm install
-
-
-9. 修改package.json(程式如下)
------------------------------------------------- 
 
 
 10. 增加index.js(程式如下)
@@ -86,12 +81,13 @@ heroku open
 
 
 13. **設定line developers的頻道內容
-    (1) 先登入line developers
-    (2) 先在line developers中建立provider, 也在其中建立了頻道
-    (3) 設定一次即可, 除非更改應用程式 
+    (1) 如已設定, 可跳過本步驟
+    (2) 先登入line developers
+    (3) 先在line developers中建立provider, 也在其中建立了頻道
+    (4) 在頻道中增加設定以下:
 ------------------------------------------------ 
 Use webhooks -> Enabled
-Webhook URL -> 步驟12顯示的heroku應用程式網址
+Webhook URL  -> 步驟12顯示的heroku應用程式網址
 
 
 14. 查看Heroku的控制台畫面
