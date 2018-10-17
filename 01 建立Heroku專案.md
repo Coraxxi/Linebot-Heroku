@@ -45,34 +45,34 @@ heroku whoami
 
 ### (7) **如果要登出heroku
 ```
-heroku login
+heroku logout
 ```
 
 
 ### (8) 如果已登出, 請先重新登入
 
 
-### (9) 建立一個heroku專案(若名稱重覆, 再改一個)
+### (9) **建立一個heroku應用程式(也可以在heroku developers平台中建立)
 ```
 heroku create 專案名稱(如:test12345)
 ```
 
 
-### (10) 顯示自己在heroku帳號中所有的專案
+### (10) 顯示自己在heroku帳號中所有的應用程式
 ```
 heroku apps
 ```
 
 
-### (11) 顯示目前操作的heroku專案
+### (11) 設定目前操作的heroku應用程式
+```
+heroku git:remote -a [heroku應用程式名稱]
+```
+
+
+### (12) 顯示目前操作的heroku應用程式(應該會與步驟11設定的名稱相同)
 ```
 heroku apps:info
-```
-
-
-### (12) **變更目前操作的heroku專案
-```
-heroku git:remote -a [另一個heroku專案名稱]
 ```
 
 
@@ -82,7 +82,7 @@ git remote -v
 ```
 
 
-### (14) 將本地端資料上傳至遠端heroku專案的git儲存庫
+### (14) 將本地端資料上傳至遠端heroku應用程式的git儲存庫
 ```
 git add .
 git commit -am "myApp"
@@ -90,25 +90,26 @@ git push heroku master
 ```
 
 
-### (15) 開啟目前操作的heroku專案
+### (15) 開啟目前操作的heroku應用程式
 ```
 heroku open
 ```
+
 
 #### 應該看到以下畫面
 ![GitHub Logo](/imgs/1-4.jpg)
 
 
-### (16) 查看目前操作heroku的console畫面
+### (16) 查看目前操作heroku的控制台畫面
 ```
 heroku logs --tail
 ```
 
 
-### (17) 將git儲存庫內容下載在另一個資料(假設是myApp2, 需先登入heroku)
+### (17) 將遠端git內容下載至另一個資料夾中(假設下載至app2, 需先登入heroku)
 ```
 cd\
 md app2
 cd app2
-heroku git:clone -a test12345(自己原有heroku專案的名稱)
+heroku git:clone -a [自己原有heroku的應用程式名稱]
 ```
