@@ -3,6 +3,13 @@
 ### CLI命令:
 
 ```
+執行前題, 先申請:
+(1) line developers帳號
+(2) heroku developers帳號
+(3) github帳號
+
+
+
 1. 在[D槽]建立一個<bot>資料夾.
 ------------------------------------------------ 
 d:
@@ -12,23 +19,26 @@ cd bot
 
 
 2. 建立一個本地端的git
+   (假設已安裝git, 網址: https://git-scm.com/downloads)
 ------------------------------------------------ 
 git init
 
 
 3. 產生package.json
+   (假設已安裝node.js)
 ------------------------------------------------ 
 npm init
 
 
 4. 登入heroku
+   (假設已安裝heroku, 命令: npm install heroku -g)
 ------------------------------------------------ 
 heroku login
 
 
-5. 登入git
+5. 登入github
 ------------------------------------------------ 
-若未安裝git cli, 先下載安裝:https://git-scm.com/downloads
+https://github.com/
 
 
 6. **建立一個heroku應用程式(本步驟也可以在heroku平台上建立)
@@ -41,30 +51,55 @@ heroku create [heroku應用程式名稱]
 7. 設定目前操作的heroku應用程式
 ------------------------------------------------ 
 heroku git:remote -a [heroku應用程式名稱]
-                     +-----------------+ (自己的專案名稱)             
+                     +-----------------+ (自己的heroku應用程式名稱)             
 
 
-8. 修改package.json, 增加index.js(程式如下)
+
+8. 修改package.json(程式如下)
 ------------------------------------------------ 
 
 
 9. 安裝模組
 ------------------------------------------------ 
 npm install
-npm install express --save
-npm install linebot --save
 
 
-10. 上傳本地端git至heroku專案的git空間
+9. 修改package.json(程式如下)
+------------------------------------------------ 
+
+
+10. 增加index.js(程式如下)
+------------------------------------------------ 
+
+
+11. 上傳本地端git至heroku應用程式的git空間
 ------------------------------------------------ 
 git add .
 git commit -am "myApp"
 git push heroku master
 
 
-11. 查看Heroku的控制台畫面
+12. 開啟heroku應用程式
+    (在瀏覽器中顯示, heroku應用程式網址如 https://****.herokuapp.com/)
+------------------------------------------------
+heroku open
+
+
+13. **設定line developers的頻道內容
+    (1) 先登入line developers
+    (2) 先在line developers中建立provider, 也在其中建立了頻道
+    (3) 設定一次即可, 除非更改應用程式 
+------------------------------------------------ 
+Use webhooks -> Enabled
+Webhook URL -> 步驟12顯示的heroku應用程式網址
+
+
+14. 查看Heroku的控制台畫面
 ------------------------------------------------ 
 heroku logs --tail
+
+
+15. 在Line中測試
 ```
 
 
