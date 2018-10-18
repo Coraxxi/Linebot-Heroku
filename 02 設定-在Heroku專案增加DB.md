@@ -1,4 +1,4 @@
-# 02 在Heroku專案增加DB
+# 02 設定-在Heroku專案增加DB
 
 
 
