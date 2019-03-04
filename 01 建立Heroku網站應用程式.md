@@ -112,7 +112,7 @@ git push heroku master
 
 
 
-### (5-2) 開啟Heroku應用程式, 測試是否上傳成功
+### (5-2) 開啟Heroku應用程式, 測試是否上傳成功? 
 ```
 heroku open
 或是
@@ -126,8 +126,9 @@ https://tomlin-app-1.herokuapp.com/
 
 
 ### (6) 其他Herolu命令
+
+##### 顯示目前的登入帳號
 ```
-顯示目前的登入帳號
 heroku whoami
 ```
 
