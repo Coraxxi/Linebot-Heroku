@@ -1,32 +1,17 @@
 # 04-1 機器人-回應Hello
 
 
-
-## 1. 準備工作
-
-### (1-1) 在Line Developers平台上建立一個帳戶, 或用Line帳號登入
-
-#### https://developers.line.biz/en/
-![GitHub Logo](/imgs/4-1-1.jpg)
-
-
-### (1-2) 完成 [步驟01 建立Heroku網站應用程式]
-#### https://github.com/tomlinNTUB/linebot-heroku/blob/master/01%20%E5%BB%BA%E7%AB%8BHeroku%E7%B6%B2%E7%AB%99%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.md
-
-#### 完成後, 有Heroku應用程式(假設名稱為tomlin-app-1), 另有本地端網站在E槽的app資料夾中
-```
-                                             Line Developers
-                                                  |__ Providers
-      Heroku應用程式                                      |__ 頻道
-        |                                                |__ 頻道
-        |__ tomlin-app-1     <.......................>   |__ 頻道
-                                (設定頻道的處理程式)       |__ ...
-                ^                
-                .
-                .
-                . (上傳應用程式)
-                .
-                .
+Heroku雲端平台                                                     Line Developers
+    |                                                                    |
+    |__ <應用程式>                                                        |__ Provider (訂房代理人)
+    |       |__ tomlin-app-1  (請自訂名稱)   <.......................>           |__ Channel (花東訂房)       
+    .                                           (連結頻道與應用程式)                                 
+                 ^                
+                 .
+                 .
+                 . (上傳應用程式)
+                 .
+                 .
       
   本地端電腦 (撰寫應用程式)
          E:
@@ -39,6 +24,18 @@
                 |__ <routes>
                 |__ <views>
 ```
+  
+
+## 1. 準備工作
+
+### (1-1) 在Line Developers平台上建立一個帳戶, 或用Line帳號登入
+
+#### https://developers.line.biz/en/
+![GitHub Logo](/imgs/4-1-1.jpg)
+
+
+### (1-2) 完成 [步驟01 建立Heroku網站應用程式]
+#### https://github.com/tomlinNTUB/linebot-heroku/blob/master/01%20%E5%BB%BA%E7%AB%8BHeroku%E7%B6%B2%E7%AB%99%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.md
 
 
 ## 2. 在Line Developers中建立Provider及Channel
@@ -59,12 +56,13 @@
 
 
 
-## 3. 修改package.json及index.js
+## 3. 修改package.json及增加index.js
 ```
          E:
           |__ <app>
                 |__ app.js
-                |__ package.json
+                |__ package.json  (修改)
+                |__ index.js      (增加)
                 |
                 |__ <node_modules>
                 |__ <public>
@@ -93,7 +91,7 @@
 ```
 
 
-### (3-2) 修改index.js
+### (3-2) 增加index.js
 ``` js
 //--------------------------------
 // 載入必要的模組
@@ -153,25 +151,28 @@ git commit -am "myApp"
 git push heroku master
 ```
 
-## 5. 開啟Heroku應用程式, 留意其網址, 如 https://****.herokuapp.com/
+## 5. 開啟Heroku應用程式, 留意其網址, 如 https://tomlin-app-1.herokuapp.com/
 
 ```
 heroku open
 ```
+![GitHub Logo](/imgs/4-5-1.jpg)
+
 
 ## 6. 設定line developers的頻道內容
 ```
 Use webhooks -> Enabled
-Webhook URL  -> 步驟12顯示的heroku應用程式網址
+Webhook URL  -> 步驟5顯示的heroku應用程式網址
 ```
 
-14. 查看Heroku的控制台畫面
------------------------------------------------- 
+## 7. 查看Heroku的控制台畫面, 應該沒有Error訊息
+```
 heroku logs --tail
-
-
-15. 在Line中測試
 ```
+
+![GitHub Logo](/imgs/4-7-1.jpg)
+
+
 
 
 ### (1) 增加index.js, 修改package.json
