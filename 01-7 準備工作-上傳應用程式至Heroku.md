@@ -53,7 +53,7 @@ heroku git:remote -a tomlin-app-1
 
 
 
-## 4. 將本地端網站上傳至Heroku應用程式
+## 4. 將本地端應用程式上傳至Heroku應用程式
 
 ```
 git add .
