@@ -1,4 +1,4 @@
-# 03-1 詢問與回答-image carousel
+# 03-2 詢問與回答-image carousel
 
 ```
  |__ <app>
