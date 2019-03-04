@@ -148,6 +148,19 @@ npm install
 
 
 ## 4. 上傳至Heroku應用程式
+
+#### 登入Heroku
+```
+heroku login
+```
+
+#### 指定app (確定已登入Git)
+```
+git init
+heroku git:remote -a tomlin-app-1
+```
+
+#### 上傳至Heroku
 ```
 git add .
 git commit -am "myApp"
