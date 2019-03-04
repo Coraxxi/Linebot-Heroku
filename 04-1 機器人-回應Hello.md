@@ -41,7 +41,7 @@
 ```
 
 
-## 2. 在Line Developers中建立Providers及Channel
+## 2. 在Line Developers中建立Provider及Channel
 
 ### (2-1) 建立Providers, 假設建立名稱為[訂房代理人] 
 
