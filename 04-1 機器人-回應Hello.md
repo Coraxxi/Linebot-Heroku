@@ -13,7 +13,7 @@
 ### (1-2) 完成了[步驟01 建立Heroku網站應用程式]
 #### https://github.com/tomlinNTUB/linebot-heroku/blob/master/01%20%E5%BB%BA%E7%AB%8BHeroku%E7%B6%B2%E7%AB%99%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.md
 
-#### 目前已有Heroku應用程式(假設名稱為tomlin-app-1), 本地端網站在E槽的<app>資料夾中
+#### 目前已有Heroku應用程式(假設名稱為tomlin-app-1), 本地端網站在E槽的app資料夾中
 ```
                                              Line Developers
                                                   |__ Providers
