@@ -39,13 +39,17 @@ Heroku雲端平台                                                     Line Deve
 
 ## 2. 在Line Developers中建立Provider及Channel
 
-### (2-1) 建立Providers, 假設名稱為[訂房代理人] 
-
+### (2-1) 建立一個Provider
+```
+假設Provider名稱為[訂房代理人] 
+```
 ![GitHub Logo](/imgs/4-2-1.jpg)
 
 
-### (2-2) 在[訂房代理人]中建立Channel, 假設名稱為[花東訂房] 
-
+### (2-2) 在[訂房代理人]中建立Channel
+```
+假設Channel名稱為[花東訂房] 
+```
 ![GitHub Logo](/imgs/4-2-2.jpg)
 
 
