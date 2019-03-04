@@ -37,7 +37,7 @@ Heroku雲端平台
 ![GitHub Logo](/imgs/1-3-2.jpg)
 
 
-## 2. 在Git平台上建立一個帳戶
+## 2. 在Git平台上建立一個帳戶, 並請登入
 
 #### https://github.com/
 ![GitHub Logo](/imgs/1-1-2.jpg)
@@ -53,7 +53,7 @@ Heroku雲端平台
 
 ## 2. 在自己的電腦建立一個網站
 
-### (2-1) 假設網站建在E槽, 網站名稱是app
+### (2-1) 假設網站建在E槽, 名稱是app
 
 ```
 npm install express-generator -g
@@ -111,7 +111,11 @@ heroku login
 #### https://github.com/
 
 
-### (3-3) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
+### (3-3) 連至Heroku應用程式
+```
+請輸入自己的應用程式名稱, 以下假設名稱為 tomlin-app-1
+```
+
 ```
 git init
 heroku git:remote -a tomlin-app-1
@@ -147,5 +151,5 @@ https://tomlin-app-1.herokuapp.com/
 
 
 
-## 5. Herolu命令參考:
+## 5. 更多Herolu命令參考:
 https://devcenter.heroku.com/articles/heroku-cli-commands
