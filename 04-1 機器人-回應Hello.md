@@ -168,6 +168,12 @@ heroku open
 Use webhooks -> Enabled
 Webhook URL  -> 步驟5顯示的heroku應用程式網址
 ```
+![GitHub Logo](/imgs/4-6-1.jpg)
+
+
+
+## 7. 用手機刷QR加入頻道
+```
+隨便發訊息給機器人, 確定是否回覆"Hello, 你好"
+```
 ![GitHub Logo](/imgs/4-7-1.jpg)
-
-
