@@ -16,13 +16,9 @@ Heroku雲端平台                                                     Line Deve
   本地端電腦 (撰寫應用程式)
          E:
           |__ <app>
-                |__ app.js
+                |__ index.js
                 |__ package.json
-                |
                 |__ <node_modules>
-                |__ <public>
-                |__ <routes>
-                |__ <views>
 ```
   
 
@@ -34,8 +30,8 @@ Heroku雲端平台                                                     Line Deve
 ![GitHub Logo](/imgs/4-1-1.jpg)
 
 
-### (1-2) 完成 [步驟01 建立Heroku網站應用程式]
-#### https://github.com/tomlinNTUB/linebot-heroku/blob/master/01%20%E5%BB%BA%E7%AB%8BHeroku%E7%B6%B2%E7%AB%99%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.md
+### (1-2) 參考 [步驟01 建立Heroku網站應用程式], 建立一個Heroku應用程式
+
 
 
 ## 2. 在Line Developers中建立Provider及Channel
@@ -60,14 +56,10 @@ Heroku雲端平台                                                     Line Deve
 ```
          E:
           |__ <app>
-                |__ app.js
                 |__ package.json  (修改)
                 |__ index.js      (增加)
                 |
                 |__ <node_modules>
-                |__ <public>
-                |__ <routes>
-                |__ <views>
 ```
 
 
@@ -144,6 +136,11 @@ var server = app.listen(process.env.PORT || 3000, function() {
 ```
 
 
+### (3-3) 產生node_modules內的模組
+``` js
+npm install
+```
+
 ## 4. 上傳至Heroku應用程式
 ```
 git add .
@@ -164,6 +161,7 @@ heroku open
 Use webhooks -> Enabled
 Webhook URL  -> 步驟5顯示的heroku應用程式網址
 ```
+![GitHub Logo](/imgs/4-6-1.jpg)
 
 ## 7. 查看Heroku的控制台畫面, 應該沒有Error訊息
 ```
