@@ -1,7 +1,6 @@
 # 04-1 機器人-回應Hello
 
 
-# 01 建立一個Line開發者帳號
 
 ## 1. 準備工作
 
@@ -11,9 +10,38 @@
 ![GitHub Logo](/imgs/4-1-1.jpg)
 
 
-### (1-2) 在Git平台上建立一個帳戶
+### (1-2) 完成了[步驟01 建立Heroku網站應用程式]的工作
 
-#### https://github.com/
+#### 如同步驟01, 假設Heroku應用程式名稱為tomlin-app-1, 本地端網站在E槽的<app>資料夾中
+```
+                                             Line Developers
+                                                  |__ Providers
+      Heroku應用程式                                      |__ 頻道
+        |                                                |__ 頻道
+        |__ tomlin-app-1     <.......................>   |__ 頻道
+                                (設定頻道的處理程式)       |__ ...
+                ^                
+                .
+                .
+                . (上傳應用程式)
+                .
+                .
+      
+  本地端電腦 (撰寫應用程式)
+         E:
+          |__ <app>
+                |__ app.js
+                |__ package.json
+                |
+                |__ <node_modules>
+                |__ <public>
+                |__ <routes>
+                |__ <views>
+```
+
+
+
+
 ![GitHub Logo](/imgs/1-1-2.jpg)
 
 
