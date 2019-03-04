@@ -55,9 +55,9 @@ Heroku雲端平台
 
 
 
-## 2. 在自己的電腦建立一個網站
+## 4. 在自己的電腦建立一個網站
 
-### (2-1) 假設網站建在E槽, 名稱是app
+### (4-1) 假設網站建在E槽, 名稱是app
 
 ```
 npm install express-generator -g
@@ -72,7 +72,7 @@ npm install
 
 
 
-### (2-2) 啟動網站
+### (4-2) 啟動網站
 
 ```
 npm start
@@ -81,14 +81,14 @@ npm start
 
 
 
-### (2-3) 測試網站是否成功
+### (4-3) 測試網站是否成功
 
 #### http://localhost:3000
 ![GitHub Logo](/imgs/1-2-3.jpg)
 
 
 
-### (2-4) 停止網站
+### (4-4) 停止網站
 
 #### 同時按[Ctrl]及[C]鍵
 ![GitHub Logo](/imgs/1-2-4.jpg)
@@ -99,9 +99,9 @@ npm start
 
 
 
-## 3. 將本地端網站連結至Heroku應用程式
+## 5. 將本地端網站連結至Heroku應用程式
 
-### (3-1) 登入Heroku
+### (5-1) 登入Heroku
 ```
 heroku login
 (依照說明依序輸入帳號及密碼)
@@ -111,11 +111,11 @@ heroku login
 
 
 
-### (3-2) 確定已登入Git
+### (5-2) 確定已登入Git
 #### https://github.com/
 
 
-### (3-3) 連至Heroku應用程式
+### (5-3) 連至Heroku應用程式
 ```
 請輸入自己的應用程式名稱, 以下假設名稱為 tomlin-app-1
 ```
@@ -129,9 +129,9 @@ heroku git:remote -a tomlin-app-1
 
 
 
-## 4. 將本地端網站上傳至Heroku應用程式
+## 6. 將本地端網站上傳至Heroku應用程式
 
-### (4-1) 上傳
+### (6-1) 上傳
 ```
 git add .
 git commit -am "make it better"
@@ -142,7 +142,7 @@ git push heroku master
 
 
 
-### (4-2) 開啟Heroku應用程式, 測試是否上傳成功? 
+### (6-2) 開啟Heroku應用程式, 測試是否上傳成功? 
 ```
 heroku open
 或是
@@ -155,5 +155,5 @@ https://tomlin-app-1.herokuapp.com/
 
 
 
-## 5. 更多Herolu命令參考:
+## 7. 更多Herolu命令參考:
 https://devcenter.heroku.com/articles/heroku-cli-commands
