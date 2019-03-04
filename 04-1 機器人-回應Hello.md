@@ -30,8 +30,11 @@ Heroku雲端平台                                                     Line Deve
 ![GitHub Logo](/imgs/4-1-1.jpg)
 
 
-### (1-2) 參考 [步驟01 建立Heroku網站應用程式], 建立一個Heroku應用程式
-
+### (1-2) 建立一個Heroku應用程式, 如有必要參考前面講次
+```
+假設名稱為 tomlin-app-1
+```
+![GitHub Logo](/imgs/1-3-2.jpg)
 
 
 ## 2. 在Line Developers中建立Provider及Channel
