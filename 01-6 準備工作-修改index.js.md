@@ -30,7 +30,7 @@ Heroku雲端平台                                                      Line開�
 #### (1) channelId及channelSecret
 ![GitHub Logo](/imgs/A1-6-1.jpg)
 
-#### (2) channelAccessToken
+#### (2) channelAccessToken (點Issue按鈕後才會產生)
 ![GitHub Logo](/imgs/A1-6-2.jpg)
 
 ## 2. 將資料填入index.js中
