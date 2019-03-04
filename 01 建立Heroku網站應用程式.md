@@ -112,93 +112,60 @@ git push heroku master
 
 
 
-### (4-2) 確定已登入Git
-#### https://github.com/
-
-
-### (4-3) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
-```
-git init
-heroku git:remote -a tomlin-app-1
-```
-![GitHub Logo](/imgs/1-4-3.jpg)
-
-
-
-
-### (6) 檢查目前的使用者帳號
-```
-heroku whoami
-```
-
-
-### (7) **如果要登出heroku
-```
-heroku logout
-```
-
-
-### (8) 如果已登出, 請先重新登入
-
-
-### (9) **建立一個heroku應用程式(也可以在heroku developers平台中建立)
-```
-heroku create [heroku應用程式名稱(如:test12345)]
-```
-
-
-### (10) 顯示自己在heroku帳號中所有的應用程式
-```
-heroku apps
-```
-
-
-### (11) 設定目前操作的heroku應用程式
-```
-heroku git:remote -a [heroku應用程式名稱]
-```
-
-
-### (12) 顯示目前操作的heroku應用程式(應該會與步驟11設定的名稱相同)
-```
-heroku apps:info
-```
-
-
-### (13) 列出遠端git儲存庫資訊
-```
-git remote -v
-```
-
-
-### (14) 將本地端資料上傳至遠端heroku應用程式的git儲存庫
-```
-git add .
-git commit -am "myApp"
-git push heroku master
-```
-
-
-### (15) 開啟目前操作的heroku應用程式
+### (5-2) 開啟Heroku應用程式, 測試是否上傳成功
 ```
 heroku open
 ```
 
-
-#### 應該看到以下畫面
-![GitHub Logo](/imgs/1-4.jpg)
+![GitHub Logo](/imgs/1-5-2.jpg)
 
 
-### (16) 查看目前操作heroku的控制台畫面
+
+
+
+### (6) 其他Herolu命令
 ```
+顯示目前的登入帳號
+heroku whoami
+```
+
+```
+登出heroku
+heroku logout
+```
+
+
+```
+顯示目前Heroku帳號中所有的應用程式
+heroku apps
+```
+
+```
+設定目前操作的heroku應用程式
+heroku git:remote -a [heroku應用程式名稱]
+```
+
+```
+顯示目前操作的heroku應用程式
+heroku apps:info
+```
+
+```
+列出遠端git儲存庫資訊
+git remote -v
+```
+
+
+```
+查看目前操作heroku的控制台畫面
 heroku logs --tail
 ```
 
 
-### (17) 將遠端git內容下載至另一個資料夾中(假設下載至app2, 需先登入heroku)
 ```
+將遠端git內容下載至另一個資料夾中(假設下載至app2, 需先登入heroku)
 cd\
 md app2
 cd app2
-heroku git:clone -a [自己原有heroku的應用程式名稱]
+heroku git:clone -a [自己的Heroku的應用程式名稱]
 ```
