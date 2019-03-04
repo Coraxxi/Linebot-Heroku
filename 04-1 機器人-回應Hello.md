@@ -10,10 +10,10 @@
 ![GitHub Logo](/imgs/4-1-1.jpg)
 
 
-### (1-2) 完成了[步驟01 建立Heroku網站應用程式]
+### (1-2) 完成 [步驟01 建立Heroku網站應用程式]
 #### https://github.com/tomlinNTUB/linebot-heroku/blob/master/01%20%E5%BB%BA%E7%AB%8BHeroku%E7%B6%B2%E7%AB%99%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F.md
 
-#### 目前已有Heroku應用程式(假設名稱為tomlin-app-1), 本地端網站在E槽的app資料夾中
+#### 完成後, 有Heroku應用程式(假設名稱為tomlin-app-1), 另有本地端網站在E槽的app資料夾中
 ```
                                              Line Developers
                                                   |__ Providers
@@ -45,8 +45,17 @@
 
 ### (2-1) 建立Providers, 假設建立名稱為[訂房代理人] 
 
-#### https://developers.line.biz/en/
 ![GitHub Logo](/imgs/4-2-1.jpg)
+
+
+### (2-2) 建立Channel, 假設建立名稱為[花東訂房] 
+
+![GitHub Logo](/imgs/4-2-2.jpg)
+
+
+### (2-3) 完成後 
+
+![GitHub Logo](/imgs/4-2-3.jpg)
 
 
 8. 修改package.json(程式如下)
