@@ -27,10 +27,10 @@ Heroku雲端平台                                                      Line開�
 
 ## 1. 在Line開發者的頻道中, 找到3個關於頻道的設定
 
-#### channelId及channelSecret
+#### (1) channelId及channelSecret
 ![GitHub Logo](/imgs/A1-6-1.jpg)
 
-#### channelAccessToken
+#### (2) channelAccessToken
 ![GitHub Logo](/imgs/A1-6-2.jpg)
 
 ## 2. 將資料填入index.js中
