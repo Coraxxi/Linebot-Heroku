@@ -50,24 +50,24 @@ Heroku雲端平台                                                     Line Deve
 
 ## 2. 建立一個Heroku應用程式, 如有必要參考前面講次
 ```
-假設名稱為 tomlin-app-1
+假設應用程式名稱為 tomlin-app-1
 ```
 ![GitHub Logo](/imgs/1-3-2.jpg)
 
 
 
-## 3. 修改package.json及增加index.js
+## 3. 建立一個app資料夾, 加入package.json及index.js
 ```
-         E:
-          |__ <app>
-                |__ package.json  (修改)
-                |__ index.js      (增加)
-                |
-                |__ <node_modules>
+
+ |__ <app>
+       |__ package.json    (自行增加, 程式如下)
+       |__ index.js        (自行增加, 程式如下)
+       |
+       |__ <node_modules>  (由npm install命令產生)
 ```
 
 
-### (3-1) 修改package.json
+### (3-1) package.json
 ``` json
 {
     "name": "myApp",
@@ -87,7 +87,7 @@ Heroku雲端平台                                                     Line Deve
 ```
 
 
-### (3-2) 增加index.js
+### (3-2) index.js
 ``` js
 //--------------------------------
 // 載入必要的模組
@@ -144,6 +144,8 @@ var server = app.listen(process.env.PORT || 3000, function() {
 ``` js
 npm install
 ```
+![GitHub Logo](/imgs/4-3-1.jpg)
+
 
 ## 4. 上傳至Heroku應用程式
 ```
