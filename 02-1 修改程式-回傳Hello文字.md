@@ -34,6 +34,7 @@ var bot = linebot({
 bot.on('message', function(event) {
     event.reply('Hello, 你好');  
 });
+//========================================
 
 
 //----------------------------------------
