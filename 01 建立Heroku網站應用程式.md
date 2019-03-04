@@ -115,6 +115,8 @@ git push heroku master
 ### (5-2) 開啟Heroku應用程式, 測試是否上傳成功
 ```
 heroku open
+或是
+https://tomlin-app-1.herokuapp.com/
 ```
 
 ![GitHub Logo](/imgs/1-5-2.jpg)
@@ -129,43 +131,50 @@ heroku open
 heroku whoami
 ```
 
+
 ```
-登出heroku
+登入Heroku
+heroku login
+```
+
+
+```
+登出Heroku
 heroku logout
 ```
 
 
 ```
-顯示目前Heroku帳號中所有的應用程式
+顯示所有應用程式
 heroku apps
 ```
 
 ```
-設定目前操作的heroku應用程式
+設定目前操作的應用程式
 heroku git:remote -a [heroku應用程式名稱]
 ```
 
 ```
-顯示目前操作的heroku應用程式
+顯示目前操作的應用程式資訊
 heroku apps:info
 ```
 
 ```
-列出遠端git儲存庫資訊
+列出遠端Git儲存庫資訊
 git remote -v
 ```
 
 
 ```
-查看目前操作heroku的控制台畫面
+Heroku的控制台畫面(可查看console.log()的輸出)
 heroku logs --tail
 ```
 
 
 ```
-將遠端git內容下載至另一個資料夾中(假設下載至app2, 需先登入heroku)
+下載Heroku應用程式(假設下載至app2資料夾中, 需先登入Heroku)
 cd\
 md app2
 cd app2
-heroku git:clone -a [自己的Heroku的應用程式名稱]
+heroku git:clone -a [將下載的Heroku應用程式名稱]
 ```
