@@ -13,10 +13,10 @@ Heroku雲端平台
                  .
                  .
       
-  本地端電腦 (撰寫應用程式)
+  本地端電腦 (將建立一個Express範例網站)
          E:
           |__ <app>
-                |__ index.js
+                |__ app.js
                 |__ package.json
                 |
                 |__ <node_modules>
