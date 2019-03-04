@@ -73,11 +73,25 @@ npm start
 
 
 
-### (5) 登入heroku
+## 4. 將本地端網站連結至Heroku應用程式
+
+### (4-1) 登入Heroku
 ```
 heroku login
 (依照說明依序輸入帳號及密碼)
+'''
+
+![GitHub Logo](/imgs/1-4-1.jpg)
+
+
+
+### (4-2) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
 ```
+git init
+heroku git:remote -a tomlin-app-1
+```
+![GitHub Logo](/imgs/1-4-2.jpg)
+
 
 
 ### (6) 檢查目前的使用者帳號
