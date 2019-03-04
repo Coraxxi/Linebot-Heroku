@@ -1,0 +1,70 @@
+# 02-1 關於index.js-回傳Hello文字
+
+```
+ |__ <app>
+       |__ package.json   
+       |__ index.js      (修改此程式)
+       |
+       |__ <node_modules> 
+```
+
+
+## 1. index.js
+``` js
+//----------------------------------------
+// 載入必要的模組
+//----------------------------------------
+var linebot = require('linebot');
+var express = require('express');
+
+
+//----------------------------------------
+// 填入自己在Line Developers的channel值
+//----------------------------------------
+var bot = linebot({
+    channelId: '填入自己的資料',
+    channelSecret: '填入自己的資料',
+    channelAccessToken: '填入自己的資料'
+});
+
+
+//========================================
+// 機器人接受訊息的處理
+//========================================
+bot.on('message', function(event) {
+    event.reply('Hello, 你好');  
+});
+
+
+//----------------------------------------
+// 建立一個網站應用程式app
+// 如果連接根目錄, 交給機器人處理
+//----------------------------------------
+const app = express();
+const linebotParser = bot.parser();
+app.post('/', linebotParser);
+
+
+//----------------------------------------
+// 可直接取用檔案的資料夾
+//----------------------------------------
+app.use(express.static('public'));
+
+
+//----------------------------------------
+// 監聽3000埠號, 
+// 或是監聽Heroku設定的埠號
+//----------------------------------------
+var server = app.listen(process.env.PORT || 3000, function() {
+    var port = server.address().port;
+    console.log("正在監聽埠號:", port);
+});
+```
+
+
+## 2. 上傳至Heroku
+``` 
+git add .
+git commit -am "myApp"
+git push heroku master
+```
