@@ -64,7 +64,7 @@ npm start
 
 ## 3. 在Heroku建立一個空的應用程式
 
-### (3-1) 確定已經登入
+### (3-1) 確定已經登入Heroku
 #### https://devcenter.heroku.com/
 
 
