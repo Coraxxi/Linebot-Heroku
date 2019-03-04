@@ -14,28 +14,31 @@
 ![GitHub Logo](/imgs/1-2.jpg)
 
 
-### (1-3) 安裝node.js
+### (1-3) 安裝 node.js
 
 #### https://nodejs.org/en/
 ![GitHub Logo](/imgs/1-3.jpg)
 
+### (1-4) 確認已登入Git
 
 
+## 2. 在自己的電腦建立一個網站
 
-### (3) 進入命令提示字元畫面
+### (2-1) 假設網站建在E槽, 網站名稱是app
 
 #### 附屬應用程式 -> 命令提示字元
-![GitHub Logo](/imgs/1-3.jpg)
-
-
-### (4) 在[D槽]建立一個名稱為app的Express框架
 ```
-d:
+npm install express-generator -g
+e:
 cd\
 express app -ejs
 cd app
 npm install
 ```
+
+![GitHub Logo](/imgs/2-1.jpg)
+
+
 
 
 ### (5) 登入heroku
