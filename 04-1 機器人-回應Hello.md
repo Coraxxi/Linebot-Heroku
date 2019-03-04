@@ -58,36 +58,112 @@
 ![GitHub Logo](/imgs/4-2-3.jpg)
 
 
-8. 修改package.json(程式如下)
------------------------------------------------- 
+
+## 3. 修改package.json及index.js
+```
+         E:
+          |__ <app>
+                |__ app.js
+                |__ package.json
+                |
+                |__ <node_modules>
+                |__ <public>
+                |__ <routes>
+                |__ <views>
+```
 
 
-10. 增加index.js(程式如下)
------------------------------------------------- 
+### (3-1) 修改package.json
+``` json
+{
+    "name": "myApp",
+    "version": "1.0.0",
+    "description": "my Linebot application",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "author": "tomlin",
+    "license": "ISC",
+    "dependencies": {        
+        "express": "^4.16.3",
+        "linebot": "^1.4.1"
+    }
+}
+```
 
 
-11. 上傳本地端git至heroku應用程式的git空間
------------------------------------------------- 
+### (3-2) 修改index.js
+``` js
+//--------------------------------
+// 載入必要的模組
+//--------------------------------
+var linebot = require('linebot');
+var express = require('express');
+
+
+//--------------------------------
+// 填入自己在linebot的channel值
+//--------------------------------
+var bot = linebot({
+    channelId: '(填入自己的資料)',
+    channelSecret: '(填入自己的資料)',
+    channelAccessToken: '(填入自己的資料)'
+});
+
+
+//--------------------------------
+// 機器人接受訊息的處理
+//--------------------------------
+bot.on('message', function(event) {
+    event.reply('Hello, 你好');  
+});
+
+
+//--------------------------------
+// 建立一個網站應用程式app
+// 如果連接根目錄, 交給機器人處理
+//--------------------------------
+const app = express();
+const linebotParser = bot.parser();
+app.post('/', linebotParser);
+
+
+//--------------------------------
+// 可直接取用檔案的資料夾
+//--------------------------------
+app.use(express.static('public'));
+
+
+//--------------------------------
+// 監聽3000埠號, 
+// 或是監聽Heroku設定的埠號
+//--------------------------------
+var server = app.listen(process.env.PORT || 3000, function() {
+    var port = server.address().port;
+    console.log("正在監聽埠號:", port);
+});
+```
+
+
+## 4. 上傳至Heroku應用程式
+```
 git add .
 git commit -am "myApp"
 git push heroku master
+```
 
+## 5. 開啟Heroku應用程式, 留意其網址, 如 https://****.herokuapp.com/
 
-12. 開啟heroku應用程式
-    (在瀏覽器中顯示, heroku應用程式網址如 https://****.herokuapp.com/)
-------------------------------------------------
+```
 heroku open
+```
 
-
-13. **設定line developers的頻道內容
-    (1) 如已設定, 可跳過本步驟
-    (2) 先登入line developers
-    (3) 先在line developers中建立provider, 也在其中建立了頻道
-    (4) 在頻道中增加設定以下:
------------------------------------------------- 
+## 6. 設定line developers的頻道內容
+```
 Use webhooks -> Enabled
 Webhook URL  -> 步驟12顯示的heroku應用程式網址
-
+```
 
 14. 查看Heroku的控制台畫面
 ------------------------------------------------ 
