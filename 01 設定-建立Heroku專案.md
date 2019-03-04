@@ -1,6 +1,6 @@
 # 01 設定-建立Heroku專案
 
-
+## 1. 準備工作
 
 ### (1) 在Heroku平台上建立一個帳戶
 
@@ -8,10 +8,18 @@
 ![GitHub Logo](/imgs/1-1.jpg)
 
 
-### (2) 安裝node.js
+### (2) 在Git平台上建立一個帳戶
+
+#### https://github.com/
+![GitHub Logo](/imgs/1-2-1.jpg)
+
+
+### (3) 安裝node.js
 
 #### https://nodejs.org/en/
 ![GitHub Logo](/imgs/1-2.jpg)
+
+
 
 
 ### (3) 進入命令提示字元畫面
