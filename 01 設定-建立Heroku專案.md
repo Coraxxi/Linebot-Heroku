@@ -5,19 +5,19 @@
 ### (1-1) 在Heroku平台上建立一個帳戶
 
 #### https://devcenter.heroku.com/
-![GitHub Logo](/imgs/1-1.jpg)
+![GitHub Logo](/imgs/1-1-1.jpg)
 
 
 ### (1-2) 在Git平台上建立一個帳戶
 
 #### https://github.com/
-![GitHub Logo](/imgs/1-2.jpg)
+![GitHub Logo](/imgs/1-1-2.jpg)
 
 
 ### (1-3) 安裝 node.js
 
 #### https://nodejs.org/en/
-![GitHub Logo](/imgs/1-3.jpg)
+![GitHub Logo](/imgs/1-1-3.jpg)
 
 
 ## 2. 在自己的電腦建立一個網站
@@ -34,7 +34,7 @@ cd app
 npm install
 ```
 
-![GitHub Logo](/imgs/2-1.jpg)
+![GitHub Logo](/imgs/1-2-1.jpg)
 
 
 
