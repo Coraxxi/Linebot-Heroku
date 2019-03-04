@@ -55,6 +55,12 @@ npm start
 
 
 
+### (2-4) 停止網站
+
+#### 同時按[Ctrl]及[C]鍵
+![GitHub Logo](/imgs/1-2-4.jpg)
+
+
 ### (5) 登入heroku
 ```
 heroku login
