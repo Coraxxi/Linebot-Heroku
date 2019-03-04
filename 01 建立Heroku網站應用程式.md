@@ -79,7 +79,7 @@ npm start
 ```
 heroku login
 (依照說明依序輸入帳號及密碼)
-'''
+```
 
 ![GitHub Logo](/imgs/1-4-1.jpg)
 
