@@ -43,9 +43,9 @@ Heroku雲端平台                                                      Line開�
 // 填入自己在Line Developers的channel值
 //----------------------------------------
 var bot = linebot({
-    channelId: '(填入自己的資料)',
-    channelSecret: '(填入自己的資料)',
-    channelAccessToken: '(填入自己的資料)'
+    channelId: '填入自己的資料',
+    channelSecret: '填入自己的資料',
+    channelAccessToken: '填入自己的資料'
 });
 
 .
