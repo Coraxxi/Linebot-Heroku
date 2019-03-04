@@ -19,8 +19,6 @@
 #### https://nodejs.org/en/
 ![GitHub Logo](/imgs/1-3.jpg)
 
-### (1-4) 確認已登入Git
-
 
 ## 2. 在自己的電腦建立一個網站
 
