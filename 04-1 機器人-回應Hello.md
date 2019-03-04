@@ -43,12 +43,12 @@
 
 ## 2. 在Line Developers中建立Provider及Channel
 
-### (2-1) 建立Providers, 假設建立名稱為[訂房代理人] 
+### (2-1) 建立Providers, 假設名稱為[訂房代理人] 
 
 ![GitHub Logo](/imgs/4-2-1.jpg)
 
 
-### (2-2) 建立Channel, 假設建立名稱為[花東訂房] 
+### (2-2) 建立Channel, 假設建稱為[花東訂房] 
 
 ![GitHub Logo](/imgs/4-2-2.jpg)
 
