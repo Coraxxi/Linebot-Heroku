@@ -25,7 +25,15 @@ Heroku雲端平台                                                      Line開�
 
 
 
-### 在Line開發者的[花東訂房]頻道中, 有3個關於頻道設定要寫在index.js中
+## 1. 在Line開發者的[花東訂房]頻道中, 找到3個關於頻道的設定
+
+#### channelId及channelSecret
+![GitHub Logo](/imgs/A1-6-1.jpg)
+
+#### channelAccessToken
+![GitHub Logo](/imgs/A1-6-2.jpg)
+
+## 2. 將資料填入index.js中
 ``` js
 .
 .
