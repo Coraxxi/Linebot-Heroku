@@ -1,5 +1,29 @@
 # 01 建立Heroku網站應用程式
 
+```                                 
+      Heroku應用程式        
+        |                  
+        |__ tomlin-app-1  (請自訂名稱)  
+                          
+                ^                
+                .
+                .
+                . (上傳應用程式)
+                .
+                .
+      
+  本地端電腦 (撰寫應用程式)
+         E:
+          |__ <app>
+                |__ app.js
+                |__ package.json
+                |
+                |__ <node_modules>
+                |__ <public>
+                |__ <routes>
+                |__ <views>
+```
+
 ## 1. 準備工作
 
 ### (1-1) 在Heroku平台上建立一個帳戶
