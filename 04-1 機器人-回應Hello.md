@@ -30,23 +30,14 @@ Heroku雲端平台                                                     Line Deve
 ![GitHub Logo](/imgs/4-1-1.jpg)
 
 
-### (1-2) 建立一個Heroku應用程式, 如有必要參考前面講次
-```
-假設名稱為 tomlin-app-1
-```
-![GitHub Logo](/imgs/1-3-2.jpg)
-
-
-## 2. 在Line Developers中建立Provider及Channel
-
-### (2-1) 建立一個Provider
+### (1-2) 建立一個Provider
 ```
 假設Provider名稱為[訂房代理人] 
 ```
 ![GitHub Logo](/imgs/4-2-1.jpg)
 
 
-### (2-2) 在[訂房代理人]中建立Channel
+### (1-3) 在[訂房代理人]中建立Channel
 ```
 假設Channel名稱為[花東訂房] 
 ```
@@ -56,6 +47,12 @@ Heroku雲端平台                                                     Line Deve
 ### (2-3) 完成後 
 
 ![GitHub Logo](/imgs/4-2-3.jpg)
+
+## 2. 建立一個Heroku應用程式, 如有必要參考前面講次
+```
+假設名稱為 tomlin-app-1
+```
+![GitHub Logo](/imgs/1-3-2.jpg)
 
 
 
