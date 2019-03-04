@@ -68,7 +68,7 @@ npm start
 #### https://devcenter.heroku.com/
 
 
-### (3-2) 建立一個空的應用程式(
+### (3-2) 建立一個空的應用程式(請自訂名稱, 示範名稱為 tomlin-app-1)
 ![GitHub Logo](/imgs/1-3-2.jpg)
 
 
