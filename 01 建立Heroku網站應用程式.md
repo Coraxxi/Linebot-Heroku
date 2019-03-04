@@ -125,55 +125,55 @@ https://tomlin-app-1.herokuapp.com/
 
 
 
-### (6) 其他Herolu命令
+## 6. 其他Herolu命令
 
-##### 顯示目前的登入帳號
+#### (1)顯示目前的登入帳號
 ```
 heroku whoami
 ```
 
 
+#### (2)登入Heroku
 ```
-登入Heroku
 heroku login
 ```
 
 
+#### (3)登出Heroku
 ```
-登出Heroku
 heroku logout
 ```
 
-
+#### (4)顯示所有應用程式
 ```
-顯示所有應用程式
 heroku apps
 ```
 
+
+#### (5)設定目前操作的應用程式
 ```
-設定目前操作的應用程式
 heroku git:remote -a [heroku應用程式名稱]
 ```
 
+#### (6)顯示目前操作的應用程式資訊
 ```
-顯示目前操作的應用程式資訊
 heroku apps:info
 ```
 
+#### (7)列出遠端Git儲存庫資訊 
 ```
-列出遠端Git儲存庫資訊
 git remote -v
 ```
 
 
+#### (8)Heroku的控制台畫面, 可查看console.log()的輸出
 ```
-Heroku的控制台畫面(可查看console.log()的輸出)
 heroku logs --tail
 ```
 
 
+#### (9)載Heroku應用程式, 假設下載至app2資料夾中) 
 ```
-下載Heroku應用程式(假設下載至app2資料夾中, 需先登入Heroku)
 cd\
 md app2
 cd app2
