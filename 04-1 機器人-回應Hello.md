@@ -4,7 +4,7 @@
 
 ## 1. 準備工作
 
-### (1-1) 在Line Developers平台上建立一個帳戶
+### (1-1) 在Line Developers平台上建立一個帳戶, 或用Line帳號登入
 
 #### https://developers.line.biz/en/
 ![GitHub Logo](/imgs/4-1-1.jpg)
