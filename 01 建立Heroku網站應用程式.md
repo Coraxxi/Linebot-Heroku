@@ -20,11 +20,12 @@
 ![GitHub Logo](/imgs/1-1-3.jpg)
 
 
+
+
 ## 2. 在自己的電腦建立一個網站
 
 ### (2-1) 假設網站建在E槽, 網站名稱是app
 
-#### 附屬應用程式 -> 命令提示字元
 ```
 npm install express-generator -g
 e:
@@ -36,6 +37,21 @@ npm install
 
 ![GitHub Logo](/imgs/1-2-1.jpg)
 
+
+
+### (2-2) 啟動網站
+
+```
+npm start
+```
+![GitHub Logo](/imgs/1-2-2.jpg)
+
+
+
+### (2-3) 測試網站是否成功
+
+#### http://localhost:3000
+![GitHub Logo](/imgs/1-2-3.jpg)
 
 
 
