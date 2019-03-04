@@ -190,3 +190,12 @@ Webhook URL  -> 步驟5顯示的heroku應用程式網址
 隨便發訊息給機器人, 確定是否回覆"Hello, 你好"
 ```
 ![GitHub Logo](/imgs/4-7-1.jpg)
+
+
+## 8. 若修改程式, 通常是index.js, 再執行上傳即可
+```
+git add .
+git commit -am "myApp"
+git push heroku master
+```
+
