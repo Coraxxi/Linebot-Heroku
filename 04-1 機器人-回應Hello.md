@@ -163,106 +163,11 @@ heroku open
 ![GitHub Logo](/imgs/4-5-1.jpg)
 
 
-## 6. 設定line developers的頻道內容
+## 6. 在頻道中設定 Use webhooks 及 Webhook URL
 ```
 Use webhooks -> Enabled
 Webhook URL  -> 步驟5顯示的heroku應用程式網址
 ```
-![GitHub Logo](/imgs/4-6-1.jpg)
-
-## 7. 查看Heroku的控制台畫面, 應該沒有Error訊息
-```
-heroku logs --tail
-```
-
 ![GitHub Logo](/imgs/4-7-1.jpg)
 
 
-
-
-### (1) 增加index.js, 修改package.json
-
-```
- <myApp>
-   |___ <.git>
-   |___ <node_modules>
-   |
-   |___ index.js
-   |___ package.json  
-```
-
-
-### (2) package.json
-
-```json
-{
-    "name": "myApp",
-    "version": "1.0.0",
-    "description": "my Linebot application",
-    "main": "index.js",
-    "scripts": {
-        "start": "node ."
-    },
-    "author": "tomlin",
-    "license": "ISC",
-    "dependencies": {        
-        "express": "^4.16.3",
-        "linebot": "^1.4.1"
-    }
-}
-```
-
-
-
-### (3) index.js
-
-```javascript
-//--------------------------------
-// 載入必要的模組
-//--------------------------------
-var linebot = require('linebot');
-var express = require('express');
-
-
-//--------------------------------
-// 填入自己在linebot的channel值
-//--------------------------------
-var bot = linebot({
-    channelId: '(填入自己的資料)',
-    channelSecret: '(填入自己的資料)',
-    channelAccessToken: '(填入自己的資料)'
-});
-
-
-//--------------------------------
-// 機器人接受訊息的處理
-//--------------------------------
-bot.on('message', function(event) {
-    event.reply('Hello, 你好');  
-});
-
-
-//--------------------------------
-// 建立一個網站應用程式app
-// 如果連接根目錄, 交給機器人處理
-//--------------------------------
-const app = express();
-const linebotParser = bot.parser();
-app.post('/', linebotParser);
-
-
-//--------------------------------
-// 可直接取用檔案的資料夾
-//--------------------------------
-app.use(express.static('public'));
-
-
-//--------------------------------
-// 監聽3000埠號, 
-// 或是監聽Heroku設定的埠號
-//--------------------------------
-var server = app.listen(process.env.PORT || 3000, function() {
-    var port = server.address().port;
-    console.log("正在監聽埠號:", port);
-});
-```
