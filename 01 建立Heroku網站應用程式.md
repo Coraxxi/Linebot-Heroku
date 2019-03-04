@@ -85,12 +85,44 @@ heroku login
 
 
 
-### (4-2) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
+### (4-2) 確定已登入Git
+#### https://github.com/
+
+
+### (4-3) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
 ```
 git init
 heroku git:remote -a tomlin-app-1
 ```
-![GitHub Logo](/imgs/1-4-2.jpg)
+![GitHub Logo](/imgs/1-4-3.jpg)
+
+
+
+
+## 5. 將本地端網站上傳至Heroku應用程式
+
+### (5-1) 上傳
+```
+git add .
+git commit -am "make it better"
+git push heroku master
+```
+
+![GitHub Logo](/imgs/1-5-1.jpg)
+
+
+
+### (4-2) 確定已登入Git
+#### https://github.com/
+
+
+### (4-3) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
+```
+git init
+heroku git:remote -a tomlin-app-1
+```
+![GitHub Logo](/imgs/1-4-3.jpg)
+
 
 
 
