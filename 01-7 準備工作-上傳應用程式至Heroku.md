@@ -41,13 +41,11 @@ heroku login
 
 
 ## 3. 連至Heroku應用程式
-```
-請輸入自己的應用程式名稱, 以下假設名稱為 tomlin-app-1
-```
 
 ```
 git init
 heroku git:remote -a tomlin-app-1
+(假設在Heroku的應用程式名稱 tomlin-app-1)
 ```
 
 ![GitHub Logo](/imgs/1-4-3.jpg)
