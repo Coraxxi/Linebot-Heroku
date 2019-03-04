@@ -148,10 +148,11 @@ git commit -am "myApp"
 git push heroku master
 ```
 
-## 5. 開啟Heroku應用程式, 留意其網址, 如 https://tomlin-app-1.herokuapp.com/
+## 5. 開啟Heroku應用程式, 留意其網址
 
 ```
 heroku open
+(在此網址為 https://tomlin-app-1.herokuapp.com/)
 ```
 ![GitHub Logo](/imgs/4-5-1.jpg)
 
