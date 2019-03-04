@@ -33,7 +33,11 @@ Heroku雲端平台
 ![GitHub Logo](/imgs/1-1-1.jpg)
 
 
-### (1-2) 建立一個應用程式(請自訂名稱, 示範名稱為 tomlin-app-1)
+### (1-2) 建立一個應用程式
+```
+請自訂名稱, 示範名稱為 tomlin-app-1
+```
+
 ![GitHub Logo](/imgs/1-3-2.jpg)
 
 
