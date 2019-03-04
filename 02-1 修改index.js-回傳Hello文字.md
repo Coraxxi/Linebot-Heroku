@@ -1,4 +1,4 @@
-# 02-1 關於index.js-回傳Hello文字
+# 02-1 修改index.js-回傳Hello文字
 
 ```
  |__ <app>
