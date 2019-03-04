@@ -95,9 +95,9 @@ npm start
 
 
 
-## 4. 將本地端網站連結至Heroku應用程式
+## 3. 將本地端網站連結至Heroku應用程式
 
-### (4-1) 登入Heroku
+### (3-1) 登入Heroku
 ```
 heroku login
 (依照說明依序輸入帳號及密碼)
@@ -107,11 +107,11 @@ heroku login
 
 
 
-### (4-2) 確定已登入Git
+### (3-2) 確定已登入Git
 #### https://github.com/
 
 
-### (4-3) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
+### (3-3) 連至Heroku應用程式(請輸入自己的應用程式名稱, 以下假設名稱為tomlin-app-1)
 ```
 git init
 heroku git:remote -a tomlin-app-1
@@ -121,9 +121,9 @@ heroku git:remote -a tomlin-app-1
 
 
 
-## 5. 將本地端網站上傳至Heroku應用程式
+## 4. 將本地端網站上傳至Heroku應用程式
 
-### (5-1) 上傳
+### (4-1) 上傳
 ```
 git add .
 git commit -am "make it better"
@@ -134,7 +134,7 @@ git push heroku master
 
 
 
-### (5-2) 開啟Heroku應用程式, 測試是否上傳成功? 
+### (4-2) 開啟Heroku應用程式, 測試是否上傳成功? 
 ```
 heroku open
 或是
@@ -147,7 +147,7 @@ https://tomlin-app-1.herokuapp.com/
 
 
 
-## 6. 其他Herolu命令
+## 5. 其他Herolu命令
 
 #### (1)顯示目前的登入帳號
 ```
