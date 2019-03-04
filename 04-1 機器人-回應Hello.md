@@ -48,7 +48,7 @@ Heroku雲端平台                                                     Line Deve
 
 ![GitHub Logo](/imgs/4-2-3.jpg)
 
-## 2. 建立一個Heroku應用程式, 如有必要參考前面講次
+## 2. 建立一個Heroku應用程式, 如有必要參考講次01
 ```
 假設應用程式名稱為 tomlin-app-1
 ```
