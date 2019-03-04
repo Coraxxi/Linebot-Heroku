@@ -1,4 +1,4 @@
-# 01 建立Heroku網站應用程式
+# 01 建立Heroku應用程式
 
 ```                                 
 Heroku雲端平台        
@@ -16,7 +16,7 @@ Heroku雲端平台
   本地端電腦 (撰寫應用程式)
          E:
           |__ <app>
-                |__ app.js
+                |__ index.js
                 |__ package.json
                 |
                 |__ <node_modules>
@@ -25,21 +25,25 @@ Heroku雲端平台
                 |__ <views>
 ```
 
-## 1. 準備工作
+## 1. 在Heroku的準備工作
 
-### (1-1) 在Heroku平台上建立一個帳戶
+### (1-1) 建立一個帳戶並登入
 
 #### https://devcenter.heroku.com/
 ![GitHub Logo](/imgs/1-1-1.jpg)
 
 
-### (1-2) 在Git平台上建立一個帳戶
+### (1-4) 建立一個應用程式(請自訂名稱, 示範名稱為 tomlin-app-1)
+![GitHub Logo](/imgs/1-3-2.jpg)
+
+
+## 2. 在Git平台上建立一個帳戶
 
 #### https://github.com/
 ![GitHub Logo](/imgs/1-1-2.jpg)
 
 
-### (1-3) 安裝 node.js
+## 3. 安裝 node.js
 
 #### https://nodejs.org/en/
 ![GitHub Logo](/imgs/1-1-3.jpg)
@@ -87,14 +91,7 @@ npm start
 
 
 
-## 3. 在Heroku建立一個空的應用程式
 
-### (3-1) 確定已經登入Heroku
-#### https://devcenter.heroku.com/
-
-
-### (3-2) 建立一個空的應用程式(請自訂名稱, 示範名稱為 tomlin-app-1)
-![GitHub Logo](/imgs/1-3-2.jpg)
 
 
 
