@@ -1,0 +1,66 @@
+# 01-7 準備工作-上傳應用程式至Heroku
+
+
+```
+Heroku雲端平台                                                      Line開發者平台
+    |                                                                    |
+    |__ <應用程式>                                                        |__ Provider (訂房代理人)
+    |       |__ tomlin-app-1     <.................................>            |__ Channel (花東訂房)       
+                (請自訂名稱)            (連結頻道與應用程式)                               
+
+                 ^                
+                 .
+                 .
+                 . (上傳應用程式)
+                 .
+                 .
+      
+  本地端電腦 (撰寫應用程式)
+         D:
+          |__ <app>
+                |__ index.js
+                |__ package.json
+                |__ <node_modules>
+```
+
+
+
+
+## 1. 登入Heroku
+```
+heroku login
+(依照說明依序輸入帳號及密碼)
+```
+
+![GitHub Logo](/imgs/1-4-1.jpg)
+
+
+
+## 2. 確定已登入Git
+#### https://github.com/
+
+
+## 3. 連至Heroku應用程式
+```
+請輸入自己的應用程式名稱, 以下假設名稱為 tomlin-app-1
+```
+
+```
+git init
+heroku git:remote -a tomlin-app-1
+```
+
+![GitHub Logo](/imgs/1-4-3.jpg)
+
+
+
+
+## 4. 將本地端網站上傳至Heroku應用程式
+
+```
+git add .
+git commit -am "myApp"
+git push heroku master
+```
+
+![GitHub Logo](/imgs/1-5-1.jpg)
