@@ -154,7 +154,7 @@ npm install
 heroku login
 ```
 
-#### 指定app (確定已登入Git)
+#### 指定app (確定已登入Git, 並改用自己的應用程式名稱)
 ```
 git init
 heroku git:remote -a tomlin-app-1
@@ -178,8 +178,8 @@ heroku open
 
 ## 6. 在頻道中設定 Use webhooks 及 Webhook URL
 ```
-Use webhooks -> Enabled
-Webhook URL  -> 步驟5顯示的heroku應用程式網址
+Use webhooks 改成 Enabled
+Webhook URL  改成 步驟5顯示的heroku應用程式網址
 ```
 ![GitHub Logo](/imgs/4-6-1.jpg)
 
