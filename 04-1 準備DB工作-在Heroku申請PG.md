@@ -7,7 +7,7 @@
 
 ## 1. 建立一個Heroku Postgres資料庫
 
-#### 選擇Data, 在Heroku Postgres選單中按下[Create one].
+#### 選擇[Data]或[Databases], 在Heroku Postgres選單中按下[Create one].
 ![GitHub Logo](/imgs/2-3.jpg)
 
 
