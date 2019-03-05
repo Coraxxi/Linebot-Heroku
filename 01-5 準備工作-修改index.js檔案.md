@@ -1,4 +1,4 @@
-# 01-6 準備工作-修改index.js檔案
+# 01-5 準備工作-修改index.js檔案
 
 
 
@@ -21,7 +21,6 @@ Heroku雲端平台                                                      Line開�
           |__ <app>
                 |__ index.js
                 |__ package.json
-                |__ <node_modules>
 ```
 
 
