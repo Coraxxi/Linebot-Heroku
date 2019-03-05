@@ -20,7 +20,6 @@ Heroku雲端平台                                                      Line開�
           |__ <app>
                 |__ index.js
                 |__ package.json
-                |__ <node_modules>
 ```
   
 
