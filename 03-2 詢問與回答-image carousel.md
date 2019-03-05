@@ -2,13 +2,14 @@
 
 ```
  |__ <app>
-       |__ package.json   
        |__ index.js      (修改此程式)
+       |__ package.json
        |
        |__ <public>
-       |       |__ p01.jpg  (增加一張圖片)
-       |       |__ p02.jpg  (增加一張圖片)
-       |       |__ p03.jpg  (增加一張圖片)       
+       |       |__ <imgs>
+       |             |__ p01.jpg  (增加圖片)
+       |             |__ p02.jpg  (增加圖片)
+       |             |__ p03.jpg  (增加圖片)       
        |
        |__ <node_modules> 
 ```
