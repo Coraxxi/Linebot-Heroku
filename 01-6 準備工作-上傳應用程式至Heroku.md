@@ -1,4 +1,4 @@
-# 01-7 準備工作-上傳應用程式至Heroku
+# 01-6 準備工作-上傳應用程式至Heroku
 
 
 ```
@@ -20,7 +20,6 @@ Heroku雲端平台                                                      Line開�
           |__ <app>
                 |__ index.js
                 |__ package.json
-                |__ <node_modules>
 ```
 
 
@@ -58,7 +57,7 @@ heroku git:remote -a tomlin-app-1
 ```
 git add .
 git commit -am "myApp"
-git push heroku master
+git push heroku master -f
 ```
 
 ![GitHub Logo](/imgs/1-5-1.jpg)
