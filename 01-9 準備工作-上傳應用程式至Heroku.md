@@ -1,4 +1,4 @@
-# 01-6 準備工作-上傳應用程式至Heroku
+# 01-9 準備工作-上傳應用程式至Heroku
 
 
 ```
@@ -27,7 +27,7 @@ Heroku雲端平台                                                      Line開�
 
 ## 1. 登入Heroku
 ```
-heroku login
+heroku login -i
 ```
 
 ![GitHub Logo](/imgs/1-4-1.jpg)
