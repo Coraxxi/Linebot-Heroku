@@ -29,5 +29,5 @@ Heroku雲端平台                                                      Line開�
 npm install -g heroku
 ```
 
-![GitHub Logo](/imgs/a1-1-2.jpg)
+![GitHub Logo](/imgs/a1-0-2.jpg)
 
