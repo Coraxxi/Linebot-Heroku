@@ -23,7 +23,7 @@ Heroku雲端平台                                                      Line開�
 ```
   
 
-## 1. 以npm安網Heroku CLI
+## 1. 以npm安裝Heroku CLI
 
 ```
 npm install heroku -g
