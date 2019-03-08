@@ -38,6 +38,11 @@ heroku login
 ## 2. 確定已登入Git
 #### https://github.com/
 
+```
+git config --global user.email "tom.hr.lin@gmail.com"
+```
+![GitHub Logo](/imgs/1-4-2.jpg)
+
 
 ## 3. 連至Heroku應用程式
 
