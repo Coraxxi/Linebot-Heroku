@@ -28,15 +28,13 @@ Heroku雲端平台                                                      Line開�
 ## 1. 登入Heroku
 ```
 heroku login
-(依照說明依序輸入帳號及密碼)
 ```
 
 ![GitHub Logo](/imgs/1-4-1.jpg)
 
 
 
-## 2. 確定已登入Git, 接著在命令提示字元下輸入:
-#### https://github.com/
+## 2. 指定Github帳戶:
 
 ```
 git config --global user.email "自己在Git申請的帳號"
@@ -48,8 +46,7 @@ git config --global user.email "自己在Git申請的帳號"
 
 ```
 git init
-heroku git:remote -a tomlin-app-1
-(假設在Heroku的應用程式名稱 tomlin-app-1)
+heroku git:remote -a [在Heroku的應用程式名稱]
 ```
 
 ![GitHub Logo](/imgs/1-4-3.jpg)
