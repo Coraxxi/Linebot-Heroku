@@ -35,11 +35,11 @@ heroku login
 
 
 
-## 2. 確定已登入Git
+## 2. 確定已登入Git, 接著在命令提示字元下輸入:
 #### https://github.com/
 
 ```
-git config --global user.email "tom.hr.lin@gmail.com"
+git config --global user.email "自己在Git申請的帳號"
 ```
 ![GitHub Logo](/imgs/1-4-2.jpg)
 
