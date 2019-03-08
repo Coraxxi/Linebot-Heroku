@@ -26,7 +26,7 @@ Heroku雲端平台                                                      Line開�
 ## 1. 以npm安網Heroku CLI
 
 ```
-npm install -g heroku
+npm install heroku -g
 ```
 
 ![GitHub Logo](/imgs/a1-0-2.jpg)
