@@ -26,5 +26,5 @@ Heroku雲端平台                                                      Line開�
 ## 1. 下載Node.js並安裝
 
 #### https://nodejs.org/en/
-![GitHub Logo](/imgs/a1-1-1.jpg)
+![GitHub Logo](/imgs/a1-0-1.jpg)
 
