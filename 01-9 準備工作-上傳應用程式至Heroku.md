@@ -63,3 +63,12 @@ git push heroku master -f
 ```
 
 ![GitHub Logo](/imgs/1-5-1.jpg)
+
+
+
+## 5. 查看Heroku控制台畫面:
+
+```
+heroku logs --tail
+```
+![GitHub Logo](/imgs/1-6-1.jpg)
