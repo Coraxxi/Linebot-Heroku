@@ -38,6 +38,8 @@ heroku login -i
 
 ```
 git config --global user.email "自己在Git申請的帳號"
+或
+git config --global user.name "自己在Git申請的帳號"
 ```
 ![GitHub Logo](/imgs/1-4-2.jpg)
 
