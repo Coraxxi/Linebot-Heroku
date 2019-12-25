@@ -64,6 +64,11 @@ git commit -am "myApp"
 git push heroku master -f
 ```
 
+``` 
+在Heroku中的應用程式：
+https://[在Heroku的應用程式名稱].herokuapp.com/
+```
+
 ![GitHub Logo](/imgs/1-5-1.jpg)
 
 
